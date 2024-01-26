@@ -34,7 +34,7 @@ const ProjectCard = () => {
         </div>
         <div className="px-1 flex justify-between pt-8 ">
           <div>Fullstack Engineer</div>
-          <div className="text-right ">Apr'22 - Oct'22</div>
+          <div className="text-right ">Apr&apos;22 - Oct&apos;22</div>
         </div>
         <div className="text-2xl mt-4 font-grotesk-medium">
           Table management <br /> System <br/>
