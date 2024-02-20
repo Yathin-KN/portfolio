@@ -7,6 +7,7 @@ import useMousePosition from "../utils/ueMousePosition";
 import { motion } from "framer-motion";
 import Mask from "./../assets/mask.svg"
 import { useState } from "react";
+import Packman from "./packman";
 const ProjectCard = () => {
   const { x, y } = useMousePosition();
   const [isHovered, setIsHovered] = useState(false);
@@ -28,9 +29,10 @@ const ProjectCard = () => {
           >
             FANDB SYS
           </motion.div>
-          <div className={clsx("py-2 trans2 mix-blend-difference z-50")}>
+          <motion.div className={clsx("py-2 trans2 mix-blend-difference z-50")} onHoverStart={() => setIsHovered(true)}
+        onHoverEnd={() => setIsHovered(false)}>
             <Image src={Arrow} alt="" height={40} width={40} />
-          </div>
+          </motion.div>
         </div>
         <div className="px-1 flex justify-between pt-8 ">
           <div>Fullstack Engineer</div>
@@ -42,7 +44,7 @@ const ProjectCard = () => {
         </div>
       </motion.div>
       <div className="flex-0 w-fit rounded-md">
-        <Image src={Project} alt="" height={220} width={220} />
+        <Image src={Project} alt="" height={220} width={220} className=" " />
       </div>
 
       <motion.div className="fixed z-10 w-fit h-fit" style={{
@@ -52,7 +54,7 @@ const ProjectCard = () => {
         y:y-160,
         scale: isHovered ? 2.5 : 1,
       }}>
-        <Image src={Mask} alt="" height={50} width={50}  className="z-10" />
+        <Packman/>
       </motion.div>
     </div>
   );

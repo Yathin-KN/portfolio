@@ -1,6 +1,7 @@
 
 import { motion } from "framer-motion";
 import ProjectCard from "./components/project-card";
+import Leetcode from "./components/Leetcode";
 export default function Home() {
   
   return (
@@ -24,10 +25,10 @@ export default function Home() {
        
        </ul>
      </nav>
-     <div className="">
+     <div className="space-y-6">
      <ProjectCard/>
      </div>
-     
+     <Leetcode/>
     </main>
   );
 }

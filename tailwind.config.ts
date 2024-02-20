@@ -11,7 +11,10 @@ const config: Config = {
       "primary-bg":"#e1dfdd",
       "font-primary":"#282828",
       "font-secondary":"000000",
-      "grotesq-color":"1c1c1c"
+      "grotesq-color":"1c1c1c",
+      "bg-green-500":"rgb(34 197 94)",
+      "bg-green-300":"rgb(34 197 94)",
+      "bg-green-200":"rgb(34 197 94)"
     },
     fontFamily:{
       "mono":['Space Mono','monospace'],
