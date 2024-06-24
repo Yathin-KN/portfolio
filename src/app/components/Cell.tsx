@@ -8,7 +8,7 @@ const Cell = ({ num }: { num: number }) => {
   return (
     <div
      className={clsx('relative ', {
-        'hover:cursor-pointer': !isHovered, // Cursor pointer on hover if not already hovered
+        'hover:cursor-pointer': !isHovered, 
       })}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -20,10 +20,10 @@ const Cell = ({ num }: { num: number }) => {
         </div>
       ):null}
       <div
-        className={clsx("h-[11px] w-[11px] rounded-sm mix-blend-difference z-50 ", {
+        className={clsx("h-[12px] w-[12px] rounded-sm mix-blend-difference z-50 ", {
           "bg-[#ffffffcc]": num >= 2,
-          "bg-gradient-to-b shadow-inner from-[#4ade80] to-[#bbf7d0] first-letter:": num > 1 && num < 2,
-          "bg-gradient-to-b shadow-inner from-[#4ade80] to-[#bbf7d0]": num <= 1,
+          "bg-[#727171]": num >= 1 && num < 2,
+          "bg-[#252525]": num <= 0,
         })}
       ></div>
       

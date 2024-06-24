@@ -34,8 +34,8 @@ const ProjectCard = () => {
             <Image src={Arrow} alt="" height={40} width={40} />
           </motion.div>
         </div>
-        <div className="px-1 flex justify-between pt-8 ">
-          <div>Fullstack Engineer</div>
+        <div className="px-1 flex justify-between pt-8  ">
+          <div>Fullstack Developer</div>
           <div className="text-right ">Apr&apos;22 - Oct&apos;22</div>
         </div>
         <div className="text-2xl mt-4 font-grotesk-medium">
@@ -47,7 +47,7 @@ const ProjectCard = () => {
         <Image src={Project} alt="" height={220} width={220} className=" " />
       </div>
 
-      <motion.div className="fixed z-10 w-fit h-fit" style={{
+      {/* <motion.div className="fixed z-10 w-fit h-fit" style={{
          transformOrigin: "center center",
       }} animate={{
         x:x-130,
@@ -55,7 +55,7 @@ const ProjectCard = () => {
         scale: isHovered ? 2.5 : 1,
       }}>
         <Packman/>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };

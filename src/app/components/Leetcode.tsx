@@ -33,7 +33,7 @@ const Leetcode = () => {
   const [months, setMonths] = useState<MonthsData>(data);
   console.log(months);
   return (
-    <div className="flex  flex-wrap">
+    <div className="flex  flex-wrap w-full justify-center">
        {Object.keys(months).map(_month => (
         <div key={_month} className="p-4 mix-blend-difference z-[60]">
           {_month}
@@ -41,7 +41,6 @@ const Leetcode = () => {
             {Object.keys(months[_month]).map(timestamp => (
             
               <div key={timestamp}>
-                {/* {leetcodeData[timestamp] !== undefined ? leetcodeData[timestamp] : months[_month][timestamp]} */}
                 <Cell num={leetcodeData[timestamp] !== undefined ? leetcodeData[timestamp] : months[_month][timestamp]}/>
               </div>
             ))}

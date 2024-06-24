@@ -7,20 +7,20 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors:{
-      "primary-bg":"#e1dfdd",
-      "font-primary":"#282828",
-      "font-secondary":"000000",
-      "grotesq-color":"1c1c1c",
-      "bg-green-500":"rgb(34 197 94)",
-      "bg-green-300":"rgb(34 197 94)",
-      "bg-green-200":"rgb(34 197 94)"
-    },
     fontFamily:{
       "mono":['Space Mono','monospace'],
       // "grotesk":['Familjen Grotesk', 'sans-serif']
     },
     extend: {
+      colors:{
+        "primary-bg":"#e1dfdd",
+        "font-primary":"#282828",
+        "font-secondary":"000000",
+        "grotesq-color":"1c1c1c",
+        "bg-green-500":"rgb(34 197 94)",
+        "bg-green-300":"rgb(34 197 94)",
+        "bg-green-200":"rgb(34 197 94)"
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
